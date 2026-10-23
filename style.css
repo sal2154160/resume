@@ -1,28 +1,27 @@
+@charset "utf-8";
+
 html {
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
     background-color: rgb(206, 214, 217);
     font-family: Arial, Helvetica, sans-serif;
 }
 body {
     margin: 0px auto;
-    padding: 0px;
 }
-header {
+h1, h3, h4, h5 {
+    padding: 0.2em 0px;
+}
+header, footer {
+    padding: 8px 8px;
     background-color: darkolivegreen;
     color: white;
 
 }
 header h1 {
-    margin: 0px;
-    padding: 0.3em 0.2em;
+    padding: 0px;
     font-size: 42px;
 }
 h3 {
     font-size: 20px;
-    margin: 0px;
-    padding-bottom: 0.2em;
 }
 section {
     max-width: 1400px;
@@ -40,7 +39,22 @@ aside {
 }
 p {
     font-size: 15px;
-    margin: 0px;
     padding-top: 0.2em;
-    line-height: 1.3em;
+}
+footer {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+footer h4 {
+    width: 100%;
+}
+footer ul {
+    display: flex;
+    margin: 0px auto;
+    font-size: 14px;
+    list-style: none;
+}
+footer li {
+    padding: 0px 20px;
 }
