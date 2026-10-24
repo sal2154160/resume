@@ -7,39 +7,48 @@ html {
 body {
     margin: 0px auto;
 }
-h1, h3, h4, h5 {
-    padding: 0.2em 0px;
+h1, h2, h3, h4, h5 {
+    padding: 4px 0px 2px;
 }
 header, footer {
-    padding: 8px 8px;
-    background-color: darkolivegreen;
+    padding: 5px 6px;
+    background-color: rgb(93, 117, 54);
     color: white;
-
 }
 header h1 {
     padding: 0px;
     font-size: 42px;
 }
+h2 {
+    padding: 4px 0px 2px;
+    font-size: 28px;
+}
 h3 {
     font-size: 20px;
+}
+p {
+    padding: 4px 0px;
+    font-size: 15px;
 }
 section {
     max-width: 1400px;
     height: 100%;
     margin: 0px auto;
-    padding: 10px 0px;
+    padding: 10px 12px;
     background-color: white;
 }
+section::after {
+    clear: both;
+    content: "";
+    display: block;
+}
 aside {
-    margin: 12px;
+    float: left;
+    margin: 0px 12px 10px 0px;
     padding: 14px 12px;
     width: 25%;
     border-radius: 18px;
-    background-color: rgb(204, 240, 213);
-}
-p {
-    font-size: 15px;
-    padding-top: 0.2em;
+    background-color: rgb(228, 240, 231);
 }
 footer {
     display: flex;
