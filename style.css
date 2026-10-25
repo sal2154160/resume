@@ -1,69 +1,84 @@
 @charset "utf-8";
 
+/*HTML and Body*/
 html {
     background-color: rgb(206, 214, 217);
     font-family: Arial, Helvetica, sans-serif;
 }
-body {
-    margin: 0px auto;
-}
-h1, h2, h3, h4, h5 {
-    padding: 4px 0px 2px;
-}
-header, footer {
-    padding: 5px 6px;
-    background-color: rgb(93, 117, 54);
-    color: white;
-}
-header h1 {
-    padding: 0px;
-    font-size: 42px;
-}
-h2 {
-    padding: 4px 0px 2px;
-    font-size: 28px;
-}
-h3 {
-    font-size: 20px;
-}
+body {margin: 0px auto;}
 p {
+    width: 100%;
     padding: 4px 0px;
     font-size: 15px;
 }
+
+/*headings*/
+h1, h2, h4 {padding: 4px 0px 2px;}
+h1 {font-size: 42px;}
+h2 {font-size: 28px;}
+
+/*header*/
+header, footer {
+    padding: 5px 6px;
+    background-color: rgb(116, 138, 80);
+    color: white;
+}
+h2:nth-of-type(2) {clear: both;}
+
+/*Main Section*/
 section {
     max-width: 1400px;
     height: 100%;
     margin: 0px auto;
     padding: 10px 12px;
-    background-color: white;
+    background-color: rgb(251, 255, 245);
 }
 section::after {
     clear: both;
     content: "";
     display: block;
 }
-aside {
-    float: left;
-    margin: 0px 12px 10px 0px;
-    padding: 14px 12px;
-    width: 25%;
-    border-radius: 18px;
-    background-color: rgb(228, 240, 231);
+
+/*Footer*/
+footer h4 {width: 100%;}
+
+/*Mobile Screen*/
+@media screen and (min-width: 521px) {
+    /*Aside*/
+    aside {
+        float: left;
+        width: 25%;
+        margin: 0px 12px 10px 0px;
+        padding: 12px 12px;
+        border-radius: 18px;
+        background-color: rgb(228, 240, 231);
+    }
+    aside h2 {
+        padding-top: 0px;
+        font-size: 22px;
+    }
+
+    /*Footer*/
+    footer {
+        display: flex;
+        flex-flow: row wrap;
+        text-align: center;
+    }
+    footer ul {
+        display: flex;
+        margin: 0px auto;
+        font-size: 14px;
+        list-style: none;
+    }
+    footer li {padding: 0px 10px;}
 }
-footer {
-    display: flex;
-    flex-flow: row wrap;
-    text-align: center;
-}
-footer h4 {
-    width: 100%;
-}
-footer ul {
-    display: flex;
-    margin: 0px auto;
-    font-size: 14px;
-    list-style: none;
-}
-footer li {
-    padding: 0px 20px;
+
+/*Tablet and Desktop Screen*/
+@media screen and (max-width:520px) {
+    /*Footer*/
+    footer h4 {
+        text-align: center;
+    }
+    footer #bullet {display: none;}
+    footer ul {text-align: center;}
 }
