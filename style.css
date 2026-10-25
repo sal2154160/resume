@@ -43,7 +43,7 @@ section::after {
 footer h4 {width: 100%;}
 
 /*Mobile Screen*/
-@media screen and (min-width: 521px) {
+@media screen and (min-width: 581px) {
     /*Aside*/
     aside {
         float: left;
@@ -74,7 +74,7 @@ footer h4 {width: 100%;}
 }
 
 /*Tablet and Desktop Screen*/
-@media screen and (max-width:520px) {
+@media screen and (max-width:580px) {
     /*Footer*/
     footer h4 {
         text-align: center;
